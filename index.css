@@ -1,8 +1,10 @@
-body, html {
-    margin:0;
+body,
+html {
+    margin: 0;
     font-family: Muli, sans serif;
 }
-button{
+
+button {
     border-radius: 10px;
     font-family: Muli;
     font-style: normal;
@@ -13,6 +15,7 @@ button{
     color: white;
     letter-spacing: 0.2px;
 }
+
 .content {
     width: 100%;
     min-height: 100%;
@@ -20,6 +23,7 @@ button{
     flex-flow: row;
     justify-content: flex-start;
 }
+
 .sidebar {
     width: 20%;
     height: 100%;
@@ -37,13 +41,14 @@ button{
     font-size: 16px;
     line-height: 23px;
     letter-spacing: 0.2px;
-
     color: #FFFFFF;
 }
+
 .sidebar div {
     padding: 10px 30px;
 }
-.sidebar a{
+
+.sidebar a {
     text-decoration: none;
     width: 100%;
     padding: 20px 30px;
@@ -51,6 +56,8 @@ button{
     box-sizing: border-box;
     color: white;
 }
+
+
 /* .sidebar a:hover {
     background-color: white;
     color: #482C3D;
@@ -58,17 +65,21 @@ button{
         dz
     }
 } */
+
 .sidebar a svg {
     margin-right: 10px;
     width: 25px;
 }
+
 .sidebar a:hover+.sidebar a svg {
     background: #482C3D;
 }
+
 .active {
     background-color: white;
     color: #482C3D;
 }
+
 .main-content {
     width: 80%;
     min-height: 100%;
@@ -76,6 +87,7 @@ button{
     position: absolute;
     right: 0;
 }
+
 .topbar {
     width: 100%;
     height: 70px;
@@ -95,22 +107,27 @@ button{
     color: #897C84;
     overflow: hidden;
 }
+
 .topbar p {
     margin: 0px;
 }
+
 .right {
     display: flex;
 }
+
 .right p:first-child {
     margin-right: 40px;
 }
+
 .leaderboard-body {
     width: 100%;
     padding: 30px 50px;
     box-sizing: border-box;
 }
+
 .leaderboard-body-heading {
-    margin:0px;
+    margin: 0px;
     display: flex;
     align-items: center;
     font-size: 19px;
@@ -118,14 +135,17 @@ button{
     width: 100%;
     box-sizing: border-box;
 }
+
 .leaderboard-body-heading svg:last-child {
     width: 150px;
     margin-left: 20px;
 }
+
 .leaderboard-body-heading svg:first-child {
     width: 25px;
     margin-right: 20px;
 }
+
 .top-list {
     width: 100%;
     display: flex;
@@ -133,6 +153,7 @@ button{
     align-items: center;
     margin-top: 30px;
 }
+
 .top-card {
     width: 28%;
     height: 314px;
@@ -148,35 +169,43 @@ button{
     box-sizing: border-box;
     position: relative;
 }
+
 .top-card-icon {
     position: absolute;
     right: 10px;
     top: 10;
 }
-.top-card:nth-child(2){
+
+.top-card:nth-child(2) {
     background: #CEC075;
 }
-.top-card:nth-child(3){
+
+.top-card:nth-child(3) {
     background: #FFFFFF;
 }
+
 .top-item-2 {
     display: flex;
     flex-flow: column;
     align-items: center;
 }
+
 .top-item-2 p:first-child {
     color: white;
     font-size: 1.2em;
-    margin:0px;
+    margin: 0px;
 }
+
 .top-item-2 p:last-child {
     color: white;
     font-size: .8em;
-    margin:0px;
+    margin: 0px;
 }
+
 .top-card:nth-child(3) .top-item-2 p {
     color: #482C3D;
 }
+
 .top-item-3 {
     font-style: normal;
     font-weight: bold;
@@ -185,6 +214,7 @@ button{
     letter-spacing: 0.2px;
     color: white;
 }
+
 .top-card:nth-child(2) .top-item-3 {
     font-style: normal;
     font-weight: bold;
@@ -193,6 +223,7 @@ button{
     letter-spacing: 0.2px;
     color: #482C3D;
 }
+
 .top-card:nth-child(3) .top-item-3 {
     font-style: normal;
     font-weight: bold;
@@ -201,6 +232,7 @@ button{
     letter-spacing: 0.2px;
     color: #482C3D;
 }
+
 .table-content {
     width: 100%;
     margin-top: 30px;
@@ -208,10 +240,12 @@ button{
     flex-flow: column;
     align-items: flex-end;
 }
+
 .sort {
     font-size: .9em;
     color: #000000;
 }
+
 .sort select {
     padding: 8px 17px;
     background: #FFFFFF;
@@ -219,32 +253,76 @@ button{
     box-sizing: border-box;
     border-radius: 6px;
 }
+
 .table-list {
     width: 100%;
     margin-top: 20px;
     overflow: hidden;
     border-radius: 4px;
 }
+
 .table-item {
     width: 100%;
     padding: 5px 15px;
     box-sizing: border-box;
     background-color: white;
-    border-bottom:solid 1px rgb(230,230,230);
+    border-bottom: solid 1px rgb(230, 230, 230);
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
     font-size: .9em;
 }
+
 .table-item div {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
 }
+
 .table-item div p {
     margin-right: 10px;
 }
+
 .table-item div div {
     margin-right: 10px;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .top-list {
+        display: block;
+    }
+    .top-card {
+        width: 60vw;
+        margin-bottom: 4vh;
+    }
+    .leaderboard-body {
+        padding: 30px 37px;
+    }
+    .sidebar a {
+        padding: 20px 3px;
+        font-size: 14px;
+    }
+    .leaderboard-body-heading {
+        flex-flow: column;
+    }
+    .topbar {
+        flex-flow: column;
+    }
+    .right {
+        flex-flow: column;
+    }
+    .table-item {
+        flex-flow: column;
+    }
+    .table-content {
+        align-items: center;
+    }
+    .sidebar div {
+        padding: 10px 2px;
+        font-size: 12px;
+    }
 }
